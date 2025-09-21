@@ -1,0 +1,12 @@
+//Что выведет этот скрипт?
+let name = "Ilya";
+
+alert( `hello ${1}` ); // ? (1)
+
+alert( `hello ${"name"}` ); // ? (2)
+
+alert( `hello ${name}` ); // ? (3)
+
+В (1) выведет hello 1.
+Во (2) выведет hello name.
+В (3) выведет hello Ilya.
