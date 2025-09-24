@@ -10,12 +10,15 @@ function sumInput() {
     let sum = 0;
     let value;
 
-    do {
+    while (true) {
         value = prompt('Введите число');
-        arr.push(+value);
-    } while ( !isFinite(value) );
+        
+        if (value === null || value === '' || isNaN(value)) break;
 
-    for (num of arr){
+        arr.push(+value);
+    }
+
+    for (num of arr) {
         sum += num;
     }
 
