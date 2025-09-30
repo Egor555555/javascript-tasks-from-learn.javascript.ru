@@ -1,0 +1,18 @@
+Давайте создадим новый объект rabbit:
+
+function Rabbit(name) {
+  this.name = name;
+}
+Rabbit.prototype.sayHi = function() {
+  alert(this.name);
+};
+
+let rabbit = new Rabbit("Rabbit");
+Все эти вызовы делают одно и тоже или нет?
+
+rabbit.sayHi(); (1)
+Rabbit.prototype.sayHi(); (2)
+Object.getPrototypeOf(rabbit).sayHi(); (3)
+rabbit.__proto__.sayHi(); (4)
+
+Ответ: В (1) выведет Rabbit, в остальных случаях undefined
