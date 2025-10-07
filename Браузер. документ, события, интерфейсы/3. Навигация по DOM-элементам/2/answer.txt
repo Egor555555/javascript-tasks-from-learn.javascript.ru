@@ -1,0 +1,6 @@
+Если elem – произвольный узел DOM-элемента…
+
+Правда, что elem.lastChild.nextSibling всегда равен null?        (1)
+Правда, что elem.children[0].previousSibling всегда равен null ? (2)
+
+Ответ: (1) Да. (2) Нет, могут быть другие элементы как text или comment
