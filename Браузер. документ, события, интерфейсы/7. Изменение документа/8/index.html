@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hours{
+            color: red;
+        }
+        .minutes {
+            color: green;
+        }
+        .seconds {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="time"><span class="hours">hh</span>:<span class="minutes">mm</span>:<span class="seconds">ss</span></p>
+    <!-- клик по этой кнопке вызовет clockStart() -->
+    <input type="button" onclick="clockStart()" value="Старт">
+    <!-- клик по этой кнопке вызовет clockStop() -->
+    <input type="button" onclick="clockStop()" value="Стоп">
+    <script src="index.js"></script>
+</body>
+
+</html>
