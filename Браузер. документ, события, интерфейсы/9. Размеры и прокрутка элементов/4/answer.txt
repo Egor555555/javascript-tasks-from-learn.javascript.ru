@@ -1,0 +1,10 @@
+В чём отличие между getComputedStyle(elem).width и elem.clientWidth?
+
+Укажите хотя бы 3 отличия, лучше – больше.
+
+Ответ: 1) CSS-свойства width/height зависят от другого свойства – box-sizing, которое определяет, «что такое», собственно, 
+эти CSS-ширина и высота. Изменение box-sizing, к примеру сломает такой JavaScript.
+
+2) clientWidth возвращает число, а getComputedStyle(elem).width – строку с px на конце
+
+3) getComputedStyle не всегда даст ширину, он может вернуть, к примеру, "auto" для строчного элемента
